@@ -46,15 +46,22 @@ BugTrack_project/
 │   │   └── style.css
 ├── uploads/               # For storing screenshots
 ├── db.php                 # DB connection file
-├── header.php / footer.php
-├── login.php / logout.php / register.php
+├── header.php
+├── footer.php
+├── login.php
+├── logout.php
+├── register.php
 ├── dashboard.php          # Role-based landing page
 ├── submitBugReport.php    # Customers submit bugs
 ├── bugList.php            # Admin full bug list
-├── assignBug.php / reassignBug.php
-├── resolveBug.php / viewComments.php
-├── rateBug.php / manageUsers.php
-├── createProject.php / addComment.php
+├── assignBug.php
+├── reassignBug.php
+├── resolveBug.php
+├── viewComments.php
+├── rateBug.php
+├── manageUsers.php
+├── createProject.php
+├── addComment.php
 └── README.md
 ```
 

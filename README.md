@@ -43,26 +43,34 @@ A full-stack web application built to manage and track software bugs and defects
 BugTrack_project/
 ├── assets/
 │   ├── css/
-│   │   └── style.css
-├── uploads/               # For storing screenshots
-├── db.php                 # DB connection file
-├── header.php
-├── footer.php
-├── login.php
-├── logout.php
-├── register.php
-├── dashboard.php          # Role-based landing page
-├── submitBugReport.php    # Customers submit bugs
-├── bugList.php            # Admin full bug list
-├── assignBug.php
-├── reassignBug.php
-├── resolveBug.php
-├── viewComments.php
-├── rateBug.php
-├── manageUsers.php
-├── createProject.php
-├── addComment.php
-└── README.md
+│   │   └── style.css             
+├── uploads/                      # Stores user-submitted screenshots
+├── includes/
+│   ├── db.php                    # Centralized DB connection
+│   ├── header.php                # Common HTML <head> + top nav
+│   ├── footer.php                # Common footer HTML
+├── auth/
+│   ├── login.php
+│   ├── logout.php
+│   └── register.php
+├── dashboards                   # Entry point: detects role
+├── bugs/
+│   ├── submitBugReport.php       # Customer form
+│   ├── bugList.php               # Admin master list
+│   ├── assignBug.php
+│   ├── reassignBug.php
+│   ├── resolveBug.php
+│   ├── viewBug.php               # View a single bug with details
+│   └── rateBug.php
+├── comments/
+│   ├── viewComments.php
+│   └── addComment.php
+├── projects/
+│   └── createProject.php
+├── users/
+│   └── manageUsers.php
+├── README.md
+└── index.php                     # Optional landing page
 ```
 
 ## 🧪 Testing Checklist
@@ -83,7 +91,7 @@ BugTrack_project/
 3. Create the DB:
    - Use `BugTrack_project.sql` (or use provided queries)
 4. Set DB login in `db.php`
-5. Visit `http://localhost/BugTrack_project/login.php`
+5. Visit `http://localhost/BugTrack_project/auth/login.php`
 
 ## 👨‍💻 Developer
 
